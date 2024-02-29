@@ -1,7 +1,7 @@
 module.exports = (sequelize, DataTypes) => {
 
     // Définition du modèle User
-    const Customer = sequelize.define('Customer', {
+    const Customer = sequelize.define('userlogin', {
         firstName: DataTypes.STRING,
         lastName: DataTypes.STRING,
         email: DataTypes.STRING,

@@ -36,7 +36,12 @@ const commonConfig = {
   database: DB_NAME,
   host: DB_HOST,
   port: DB_PORT,
-  dialect: 'postgres'
+  dialect: 'postgres',
+  dialectOptions: {
+    ssl: {
+      require: true,
+    }
+  }
 }
 
 // Export de la configuration
